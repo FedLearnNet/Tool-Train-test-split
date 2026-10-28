@@ -1,0 +1,51 @@
+config:
+  hyperparams:
+  - name: test_size
+    description: Fraction of rows assigned to the test set, strictly between 0 and 1.
+    type: FLOAT
+    default: '0.25'
+    minValue: 0.0
+    maxValue: 1.0
+    options: []
+    pattern: null
+  - name: shuffle
+    description: Shuffle rows before splitting; disable to preserve input order.
+    type: BOOLEAN
+    default: 'true'
+    minValue: null
+    maxValue: null
+    options: []
+    pattern: null
+  - name: random_state
+    description: Random seed used when shuffling for reproducible splits.
+    type: INTEGER
+    default: '42'
+    minValue: null
+    maxValue: null
+    options: []
+    pattern: null
+  input:
+  - name: input
+    description: Tabular dataset to split.
+    type: CSV
+    required: true
+    delimiter: ','
+    hasHeader: true
+  output:
+  - name: train
+    description: Training subset.
+    type: CSV
+    delimiter: ','
+    hasHeader: true
+  - name: test
+    description: Test subset.
+    type: CSV
+    delimiter: ','
+    hasHeader: true
+info:
+  name: tool-train-test-split
+  slug: tool-train-test-split
+  type: PRE_PROCESSING
+  sourceUrl: https://github.com/FedLearnNet/tool-train-test-split
+  shortDescription: Splits a tabular dataset into training and test sets with configurable test size, shuffling, and random seed.
+  longDescription: null
