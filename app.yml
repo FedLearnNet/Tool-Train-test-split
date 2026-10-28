@@ -43,8 +43,8 @@ config:
     delimiter: ','
     hasHeader: true
 info:
-  name: tool-train-test-split
-  slug: tool-train-test-split
+  name: train-test-split
+  slug: train-test-split
   type: PRE_PROCESSING
   sourceUrl: https://github.com/FedLearnNet/tool-train-test-split
   shortDescription: Splits a tabular dataset into training and test sets with configurable test size, shuffling, and random seed.

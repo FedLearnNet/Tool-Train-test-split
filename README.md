@@ -1,4 +1,4 @@
-# tool-train-test-split
+# train-test-split
 
 Splits a tabular dataset into training and test sets with configurable test size, shuffling, and random seed.
 
